@@ -42,8 +42,8 @@ const ConseilSection = () => (
               key={item.label}
               className="flex items-start gap-4 bg-card rounded-lg p-5 border border-border"
             >
-              <div className="w-9 h-9 rounded-md bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
-                <item.icon className="w-4 h-4 text-accent" />
+              <div className="w-9 h-9 rounded-md bg-accent-dark/10 flex items-center justify-center shrink-0 mt-0.5">
+                <item.icon className="w-4 h-4 text-accent-dark" />
               </div>
               <span className="text-sm font-medium text-foreground">{item.label}</span>
             </div>

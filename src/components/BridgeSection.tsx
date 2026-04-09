@@ -35,12 +35,12 @@ const BridgeSection = () => (
         </p>
         <div className="flex items-center gap-4 mb-8">
           <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-            <Flame className="w-5 h-5 text-accent" />
+            <Flame className="w-5 h-5 text-accent-dark" />
             <span>Protection incendie</span>
           </div>
           <div className="flex-1 border-t border-dashed border-border" />
           <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-            <ShieldCheck className="w-5 h-5 text-accent" />
+            <ShieldCheck className="w-5 h-5 text-accent-dark" />
             <span>Protection cyber</span>
           </div>
         </div>
@@ -53,7 +53,7 @@ const BridgeSection = () => (
               key={item}
               className="flex items-center gap-3 text-sm text-foreground bg-surface-subtle rounded-md px-4 py-3"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-dark shrink-0" />
               {item}
             </li>
           ))}
