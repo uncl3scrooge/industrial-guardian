@@ -46,6 +46,10 @@ export default {
           dark: "hsl(var(--accent-dark))",
           deep: "hsl(var(--accent-deep))",
         },
+        fire: {
+          DEFAULT: "hsl(var(--fire))",
+          foreground: "hsl(var(--fire-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
