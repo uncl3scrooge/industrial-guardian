@@ -18,23 +18,22 @@ const ServicesSection = () => (
         </p>
       </motion.div>
 
-      {/* Two equal pillars */}
       <div className="grid md:grid-cols-2 gap-8 mb-8">
-        {/* Fire Protection */}
+        {/* Protection incendie */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="bg-card rounded-lg p-10 shadow-card hover:shadow-card-hover transition-shadow border border-border relative overflow-hidden"
         >
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-orange-600" />
-          <div className="w-14 h-14 rounded-xl bg-orange-500/10 flex items-center justify-center mb-6">
-            <Flame className="w-7 h-7 text-orange-500" />
+          <div className="absolute top-0 left-0 w-full h-1 bg-fire" />
+          <div className="w-14 h-14 rounded-xl bg-fire/10 flex items-center justify-center mb-6">
+            <Flame className="w-7 h-7 text-fire" />
           </div>
           <h3 className="text-xl font-heading font-bold text-foreground mb-2">
             Protection incendie
           </h3>
-          <p className="text-sm font-medium text-orange-600 mb-5">
+          <p className="text-sm font-medium text-fire mb-5">
             Maîtrise des fonctions critiques
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
@@ -42,7 +41,7 @@ const ServicesSection = () => (
           </p>
         </motion.div>
 
-        {/* Cybersecurity */}
+        {/* Cybersécurité */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +65,7 @@ const ServicesSection = () => (
         </motion.div>
       </div>
 
-      {/* Shared foundation */}
+      {/* Socle commun */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
