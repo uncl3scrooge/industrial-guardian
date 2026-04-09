@@ -41,7 +41,7 @@ const ContactSection = () => {
                 placeholder="Nom"
                 value={form.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm placeholder:text-tertiary focus:outline-none focus:ring-2 focus:ring-accent/30"
+                className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm placeholder:text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-dark/30"
               />
               <input
                 name="email"
@@ -49,7 +49,7 @@ const ContactSection = () => {
                 placeholder="Email"
                 value={form.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm placeholder:text-tertiary focus:outline-none focus:ring-2 focus:ring-accent/30"
+                className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm placeholder:text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-dark/30"
               />
             </div>
             <input
@@ -57,7 +57,7 @@ const ContactSection = () => {
               placeholder="Entreprise"
               value={form.company}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm placeholder:text-tertiary focus:outline-none focus:ring-2 focus:ring-accent/30"
+              className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm placeholder:text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-dark/30"
             />
             <textarea
               name="message"
@@ -65,7 +65,7 @@ const ContactSection = () => {
               placeholder="Votre message"
               value={form.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm placeholder:text-tertiary focus:outline-none focus:ring-2 focus:ring-accent/30 resize-none"
+              className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm placeholder:text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-dark/30 resize-none"
             />
             <Button type="submit" variant="hero" size="lg" className="w-full sm:w-auto">
               Envoyer
@@ -79,7 +79,7 @@ const ContactSection = () => {
             className="md:col-span-2 space-y-6 pt-2"
           >
             <div className="flex items-start gap-4">
-              <Mail className="w-5 h-5 text-accent mt-0.5" />
+              <Mail className="w-5 h-5 text-accent-dark mt-0.5" />
               <div>
                 <p className="text-sm font-medium text-foreground">Email</p>
                 <a href="mailto:contact@ultrametrix.fr" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -88,14 +88,14 @@ const ContactSection = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <Phone className="w-5 h-5 text-accent mt-0.5" />
+              <Phone className="w-5 h-5 text-accent-dark mt-0.5" />
               <div>
                 <p className="text-sm font-medium text-foreground">Téléphone</p>
                 <span className="text-sm text-muted-foreground">Sur demande</span>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <MapPin className="w-5 h-5 text-accent mt-0.5" />
+              <MapPin className="w-5 h-5 text-accent-dark mt-0.5" />
               <div>
                 <p className="text-sm font-medium text-foreground">Localisation</p>
                 <span className="text-sm text-muted-foreground">France</span>

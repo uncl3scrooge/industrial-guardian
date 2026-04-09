@@ -44,11 +44,11 @@ const ModulesSection = () => (
             transition={{ delay: i * 0.15 }}
             className="bg-card rounded-lg p-10 shadow-card hover:shadow-card-hover transition-shadow border border-border"
           >
-            <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
-              <mod.icon className="w-6 h-6 text-accent" />
+            <div className="w-12 h-12 rounded-lg bg-accent-dark/10 flex items-center justify-center mb-5">
+              <mod.icon className="w-6 h-6 text-accent-dark" />
             </div>
             <h3 className="text-xl font-heading font-bold text-foreground">{mod.name}</h3>
-            <p className="text-sm font-medium text-accent mt-1 mb-4">{mod.subtitle}</p>
+            <p className="text-sm font-medium text-accent-dark mt-1 mb-4">{mod.subtitle}</p>
             <p className="text-sm text-muted-foreground leading-relaxed">{mod.description}</p>
           </motion.div>
         ))}

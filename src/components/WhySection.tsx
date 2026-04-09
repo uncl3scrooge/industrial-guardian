@@ -31,8 +31,8 @@ const WhySection = () => (
             transition={{ delay: i * 0.1 }}
             className="text-center p-8 rounded-lg border border-border bg-card shadow-card hover:shadow-card-hover transition-shadow"
           >
-            <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mx-auto mb-5">
-              <r.icon className="w-7 h-7 text-accent" />
+            <div className="w-14 h-14 rounded-xl bg-accent-dark/10 flex items-center justify-center mx-auto mb-5">
+              <r.icon className="w-7 h-7 text-accent-dark" />
             </div>
             <h3 className="text-sm font-heading font-semibold text-foreground leading-snug">
               {r.title}
