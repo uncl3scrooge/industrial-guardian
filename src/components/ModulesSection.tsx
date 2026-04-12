@@ -28,10 +28,10 @@ const ModulesSection = () => (
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
-          Nos modules
+          Nos modules cyber
         </h2>
         <p className="mt-4 text-muted-foreground max-w-lg mx-auto">
-          Deux outils complémentaires pour passer de la visibilité à la maîtrise du risque.
+          Deux outils dédiés à la cybersécurité industrielle, de la visibilité à la maîtrise du risque OT.
         </p>
       </motion.div>
       <div className="grid md:grid-cols-2 gap-8">
