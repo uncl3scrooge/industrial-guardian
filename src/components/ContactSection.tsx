@@ -23,8 +23,7 @@ const ContactSection = () => {
             Parlons-en
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Vous souhaitez cartographier vos installations, mieux visualiser votre risque
-            ou structurer votre démarche de cybersécurité industrielle ?
+            Diagnostic industriel, cartographie ou cybersécurité OT — échangeons sur vos enjeux.
           </p>
         </motion.div>
         <div className="grid md:grid-cols-5 gap-12">
@@ -91,14 +90,14 @@ const ContactSection = () => {
               <Phone className="w-5 h-5 text-accent-dark mt-0.5" />
               <div>
                 <p className="text-sm font-medium text-foreground">Téléphone</p>
-                <span className="text-sm text-muted-foreground">Sur demande</span>
+                <span className="text-sm text-muted-foreground">04 78 79 21 71</span>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <MapPin className="w-5 h-5 text-accent-dark mt-0.5" />
               <div>
-                <p className="text-sm font-medium text-foreground">Localisation</p>
-                <span className="text-sm text-muted-foreground">France</span>
+                <p className="text-sm font-medium text-foreground">Siège social</p>
+                <span className="text-sm text-muted-foreground">6 rue du Méboud, 69120 Vaulx-en-Velin</span>
               </div>
             </div>
           </motion.div>
