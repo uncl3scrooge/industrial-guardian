@@ -5,16 +5,16 @@ const modules = [
   {
     icon: Map,
     name: "UMX Explorer",
-    subtitle: "Comprendre l'environnement",
+    subtitle: "Cartographie cyber des environnements OT",
     description:
-      "Module de cartographie des installations industrielles. Il permet d'identifier et de structurer les équipements, systèmes et interconnexions d'un environnement industriel. La collecte peut être réalisée en mode agent ou agentless selon le contexte technique et opérationnel.",
+      "Module de cartographie des installations industrielles dédié à la cybersécurité. Il identifie et structure les équipements, systèmes et interconnexions d'un environnement OT. La collecte peut être réalisée en mode agent ou agentless selon le contexte technique et opérationnel.",
   },
   {
     icon: BarChart3,
     name: "UMX Risk Manager",
-    subtitle: "Visualiser et piloter le risque",
+    subtitle: "Pilotage du risque cyber & conformité IEC 62443",
     description:
-      "S'appuie sur la cartographie pour fournir une vision du risque visuelle, rapide et intuitive. L'objectif : une lecture claire des expositions, des zones sensibles et des priorités de sécurisation.",
+      "S'appuie sur la cartographie UMX Explorer pour fournir une vision du risque cyber visuelle, rapide et intuitive. Lecture claire des expositions, des zones sensibles et des priorités de sécurisation, avec un accompagnement vers la mise en conformité IEC 62443.",
   },
 ];
 
