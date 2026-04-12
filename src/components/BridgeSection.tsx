@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Flame, ShieldCheck } from "lucide-react";
+import { Search, ShieldCheck } from "lucide-react";
 
 const parallels = [
-  "Mieux connaître les installations",
-  "Identifier les points sensibles",
+  "Comprendre les installations et leurs dépendances",
+  "Identifier les points sensibles et les vulnérabilités",
   "Réduire l'exposition au risque",
   "Protéger la disponibilité et la sécurité des opérations",
 ];
@@ -18,7 +18,7 @@ const BridgeSection = () => (
         className="text-center mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
-          Le lien entre protection incendie et protection cyber
+          Le lien entre diagnostic industriel et cybersécurité
         </h2>
       </motion.div>
       <motion.div
@@ -29,19 +29,20 @@ const BridgeSection = () => (
         className="bg-card rounded-lg p-10 border border-border shadow-card"
       >
         <p className="text-muted-foreground leading-relaxed mb-8">
-          La protection incendie et la protection cyber répondent à une même logique :
-          protéger les fonctions critiques d'une installation, réduire les vulnérabilités,
-          limiter les impacts d'un incident et renforcer la continuité d'activité.
+          Le diagnostic industriel et la cybersécurité répondent à une même logique :
+          comprendre un système, identifier ses faiblesses et protéger ses fonctions critiques.
+          Notre double expertise nous permet d'aborder la sécurisation des installations
+          avec une vision complète — physique et numérique.
         </p>
         <div className="flex items-center gap-4 mb-8">
           <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-            <Flame className="w-5 h-5 text-accent-dark" />
-            <span>Protection incendie</span>
+            <Search className="w-5 h-5 text-fire" />
+            <span>Diagnostic industriel</span>
           </div>
           <div className="flex-1 border-t border-dashed border-border" />
           <div className="flex items-center gap-2 text-sm font-medium text-foreground">
             <ShieldCheck className="w-5 h-5 text-accent-dark" />
-            <span>Protection cyber</span>
+            <span>Cybersécurité OT</span>
           </div>
         </div>
         <p className="text-sm text-muted-foreground mb-5">
