@@ -1,16 +1,18 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { label: "Solutions", href: "#solutions" },
-  { label: "Modules", href: "#modules" },
-  { label: "Conseil", href: "#conseil" },
-  { label: "Pourquoi Ultrametrix", href: "#pourquoi" },
-  { label: "Contact", href: "#contact" },
-];
+import { Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { lang, setLang, t } = useLanguage();
+
+  const navLinks = [
+    { label: t("nav.solutions"), href: "#solutions" },
+    { label: t("nav.modules"), href: "#modules" },
+    { label: t("nav.conseil"), href: "#conseil" },
+    { label: t("nav.why"), href: "#pourquoi" },
+    { label: t("nav.contact"), href: "#contact" },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -28,14 +30,31 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <button
+            onClick={() => setLang(lang === "fr" ? "en" : "fr")}
+            className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors border border-border rounded-md px-2.5 py-1.5"
+            aria-label="Switch language"
+          >
+            <Globe className="w-4 h-4" />
+            {lang === "fr" ? "EN" : "FR"}
+          </button>
         </div>
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setOpen(!open)}
-          aria-label="Menu"
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-3">
+          <button
+            onClick={() => setLang(lang === "fr" ? "en" : "fr")}
+            className="flex items-center gap-1 text-sm font-medium text-muted-foreground border border-border rounded-md px-2 py-1.5"
+          >
+            <Globe className="w-4 h-4" />
+            {lang === "fr" ? "EN" : "FR"}
+          </button>
+          <button
+            className="text-foreground"
+            onClick={() => setOpen(!open)}
+            aria-label="Menu"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
       {open && (
         <div className="md:hidden bg-background border-b border-border pb-4">
