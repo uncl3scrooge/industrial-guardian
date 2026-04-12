@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Search, ShieldCheck, FlaskConical, Droplets, Building2, FileSearch, Map, BarChart3, Network, Cpu } from "lucide-react";
+import { Search, ShieldCheck, FlaskConical, Droplets, Building2, FileSearch, Cpu, Network } from "lucide-react";
 
 const diagItems = [
   { icon: FlaskConical, label: "Contrôles non destructifs (CND)" },
@@ -13,19 +13,6 @@ const cyberItems = [
   { icon: Search, label: "Visualisation du risque cyber" },
   { icon: Cpu, label: "Sécurisation des systèmes industriels" },
   { icon: FileSearch, label: "Accompagnement & mise en conformité" },
-];
-
-const cyberModules = [
-  {
-    icon: Map,
-    name: "UMX Explorer",
-    desc: "Cartographie et inventaire des actifs industriels",
-  },
-  {
-    icon: BarChart3,
-    name: "UMX Risk Manager",
-    desc: "Visualisation intuitive et pilotage des risques",
-  },
 ];
 
 const ServicesSection = () => (
@@ -99,7 +86,7 @@ const ServicesSection = () => (
           <p className="text-sm text-muted-foreground leading-relaxed mb-6">
             Cartographier les environnements industriels, visualiser le risque cyber et accompagner les industriels dans la sécurisation de leurs systèmes numériques, réseaux et continuité d'activité.
           </p>
-          <div className="space-y-3 mb-6">
+          <div className="space-y-3 mt-auto">
             {cyberItems.map((item) => (
               <div key={item.label} className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-md bg-accent-dark/10 flex items-center justify-center shrink-0">
@@ -108,21 +95,6 @@ const ServicesSection = () => (
                 <span className="text-sm font-medium text-foreground">{item.label}</span>
               </div>
             ))}
-          </div>
-          {/* Modules UMX */}
-          <div className="mt-auto pt-6 border-t border-border">
-            <p className="text-xs font-semibold uppercase tracking-wider text-accent-dark mb-4">Nos modules</p>
-            <div className="grid grid-cols-2 gap-3">
-              {cyberModules.map((mod) => (
-                <div key={mod.name} className="bg-accent-dark/5 rounded-lg p-4 text-center">
-                  <div className="w-10 h-10 rounded-lg bg-accent-dark/10 flex items-center justify-center mx-auto mb-2">
-                    <mod.icon className="w-5 h-5 text-accent-dark" />
-                  </div>
-                  <p className="text-sm font-heading font-bold text-foreground">{mod.name}</p>
-                  <p className="text-xs text-muted-foreground mt-1 leading-snug">{mod.desc}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </motion.div>
       </div>
