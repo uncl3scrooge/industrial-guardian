@@ -89,6 +89,10 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.phoneLabel": "Téléphone",
     "contact.addressLabel": "Siège social",
 
+    // References
+    "references.title": "Références",
+    "references.subtitle": "Ils nous font confiance pour sécuriser leurs installations industrielles.",
+
     // Footer
     "footer.rights": "Tous droits réservés.",
   },
@@ -171,6 +175,10 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.emailLabel": "Email",
     "contact.phoneLabel": "Phone",
     "contact.addressLabel": "Headquarters",
+
+    // References
+    "references.title": "References",
+    "references.subtitle": "They trust us to secure their industrial facilities.",
 
     // Footer
     "footer.rights": "All rights reserved.",
