@@ -40,7 +40,7 @@ const ReferencesSection = () => {
                 loading="lazy"
                 width={160}
                 height={160}
-              className="max-h-[6.5rem] w-auto object-contain"
+              className="max-h-28 w-auto object-contain"
               />
             </div>
           ))}
