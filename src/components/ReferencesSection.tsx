@@ -32,7 +32,7 @@ const ReferencesSection = () => {
           {logos.map((logo) => (
             <div
               key={logo.name}
-              className="flex items-center justify-center bg-background rounded-xl border border-border p-6 h-28 shadow-sm hover:shadow-md hover:border-accent-dark/30 transition-all duration-300"
+              className="flex items-center justify-center bg-background rounded-xl border border-border p-8 h-32 shadow-sm hover:shadow-md hover:border-accent-dark/30 transition-all duration-300"
             >
               <img
                 src={logo.src}
@@ -40,7 +40,7 @@ const ReferencesSection = () => {
                 loading="lazy"
                 width={160}
                 height={160}
-                className="max-h-14 w-auto object-contain"
+                className="max-h-20 w-auto object-contain"
               />
             </div>
           ))}
