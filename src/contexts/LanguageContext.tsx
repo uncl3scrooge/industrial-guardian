@@ -90,7 +90,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.addressLabel": "Siège social",
 
     // References
-    "references.title": "Références",
+    "references.title": "Nos références",
     "references.subtitle": "Ils nous font confiance pour sécuriser leurs installations industrielles.",
 
     // Footer
@@ -177,7 +177,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "contact.addressLabel": "Headquarters",
 
     // References
-    "references.title": "References",
+    "references.title": "Our references",
     "references.subtitle": "They trust us to secure their industrial facilities.",
 
     // Footer
