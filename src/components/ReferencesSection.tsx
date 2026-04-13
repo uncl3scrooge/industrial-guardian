@@ -25,19 +25,14 @@ const ReferencesSection = () => {
   return (
     <section className="py-20 bg-muted/30">
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-            {t("references.title")}
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            {t("references.subtitle")}
-          </p>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground text-center mb-14">
+          {t("references.title")}
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center max-w-5xl mx-auto">
           {logos.map((logo) => (
             <div
               key={logo.name}
-              className="flex items-center justify-center p-4 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+              className="flex items-center justify-center bg-background rounded-xl border border-border p-6 h-28 shadow-sm hover:shadow-md hover:border-accent-dark/30 transition-all duration-300"
             >
               <img
                 src={logo.src}
@@ -45,7 +40,7 @@ const ReferencesSection = () => {
                 loading="lazy"
                 width={160}
                 height={160}
-                className="max-h-16 w-auto object-contain"
+                className="max-h-14 w-auto object-contain"
               />
             </div>
           ))}
