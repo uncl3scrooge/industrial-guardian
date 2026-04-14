@@ -49,15 +49,13 @@ const MarqueeRow = ({
         {items.map((logo, i) => (
           <div
             key={`${logo.name}-${i}`}
-            className="flex items-center justify-center bg-background/80 backdrop-blur-sm rounded-2xl border border-border/50 px-10 py-6 h-28 min-w-[200px] shadow-sm hover:shadow-lg hover:border-accent-dark/40 hover:scale-105 transition-all duration-300"
+            className="flex items-center justify-center bg-background/80 backdrop-blur-sm rounded-2xl border border-border/50 w-[200px] h-24 shadow-sm hover:shadow-lg hover:border-accent-dark/40 hover:scale-105 transition-all duration-300"
           >
             <img
               src={logo.src}
               alt={logo.name}
               loading="lazy"
-              width={140}
-              height={80}
-              className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
+              className="max-h-12 max-w-[140px] w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
             />
           </div>
         ))}
