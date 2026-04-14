@@ -2,10 +2,10 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import sanofiLogo from "@/assets/logos/sanofi.png";
 import thalesLogo from "@/assets/logos/thales.png";
 import renaultLogo from "@/assets/logos/renault.svg";
-import ahlstromLogo from "@/assets/logos/ahlstrom.jpg";
+import ahlstromLogo from "@/assets/logos/ahlstrom.png";
 import ntnLogo from "@/assets/logos/ntn.png";
-import boironLogo from "@/assets/logos/boiron.jpg";
-import elkemLogo from "@/assets/logos/elkem.jpg";
+import boironLogo from "@/assets/logos/boiron.png";
+import elkemLogo from "@/assets/logos/elkem.png";
 import rossmannLogo from "@/assets/logos/rossmann.png";
 
 const logos = [
